@@ -1,0 +1,45 @@
+{
+  "name": "@miikkaylisiurunen/slugi",
+  "version": "0.0.0",
+  "description": "Command-line tool to transform strings into web-friendly slugs",
+  "bugs": {
+    "url": "https://github.com/miikkaylisiurunen/slugi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miikkaylisiurunen/slugi.git"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bin": {
+    "slugi": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix",
+    "start": "ts-node src/cli.ts",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "arg": "^5.0.2",
+    "slugify": "^1.6.6",
+    "valibot": "^0.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "execa": "^8.0.1",
+    "prettier": "^3.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.6.0"
+  }
+}
