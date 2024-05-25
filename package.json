@@ -1,6 +1,6 @@
 {
   "name": "@miikkaylisiurunen/slugi",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Command-line tool to transform strings into web-friendly slugs",
   "bugs": {
     "url": "https://github.com/miikkaylisiurunen/slugi/issues"
