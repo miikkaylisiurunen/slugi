@@ -23,7 +23,7 @@ slugi <string> [options]
 
 ### Options
 
-- `-r, --replacement`: Replacement character for spaces in the slug. Default: `-`.
+- `-r, --replacement`: Replacement character for disallowed characters in the slug. Default: `-`.
 - `-l, --lowercase`: Converts the slug to lowercase. Default: `false`.
 - `-h, --help`: Displays help.
 - `-v, --version`: Displays the version.

@@ -4,6 +4,9 @@ import slugify from 'slugify';
 import { Slugi } from './slugi';
 import { DEFAULT_OPTIONS } from './constants';
 
+/**
+ * The main function that is executed when the CLI is run
+ */
 const main = async () => {
   const slugi = new Slugi(DEFAULT_OPTIONS, slugify);
   const result = slugi.getSlugFromArguments(process.argv);
