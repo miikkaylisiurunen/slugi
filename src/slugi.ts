@@ -1,5 +1,6 @@
 import arg from 'arg';
 import * as v from 'valibot';
+import pc from 'picocolors';
 import { version } from '../package.json';
 import {
   ParsedArguments,
@@ -59,7 +60,7 @@ Options:
   generateHelpMessage(message: string) {
     return `${this.helpMessage}
 
-${message}`;
+${pc.bgRed(' ERROR ')} ${pc.red(message)}`;
   }
 
   /**
@@ -73,10 +74,13 @@ ${message}`;
       {
         '--version': Boolean,
         '-v': '--version',
+
         '--help': Boolean,
         '-h': '--help',
+
         '--lowercase': Boolean,
         '-l': '--lowercase',
+
         '--replacement': String,
         '-r': '--replacement',
       },
